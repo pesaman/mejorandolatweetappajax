@@ -1,0 +1,10 @@
+
+   consumer_key:        "PwRRa6OGzlo953mrIgM7YisQM"
+   consumer_secret:     "kdloiJcGH581PaaaQGceKARXfheXjPM17GYf23QvfNDstAZ2WE"
+   access_token:        "1528531538-pmaB9CsjT4wAnE7Ay9zcuVKtiS4lKRtlZ1lkZVL"
+   access_token_secret: "72g66TwBqM33kJ8CZo0UKUfPUjFc7nW3oSQn8idhNaJu7"
+
+
+
+#este es el archicvo que contendra las credenciales para poder logearnos con twitter de esta manera
+# cuanso subamos el proyecto este lo ignora por segurifdad de nosotros
