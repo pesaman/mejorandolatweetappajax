@@ -1,9 +1,19 @@
-  <h1>Tuiter</h1>
+  <h1>Bienvenido al app de twitter!</h1>
 
-<h2>Buscar Twitter</h2>
+  <% if @username %>
+    <form id="logout" action="/logout" method="POST">
+      <p>Welcome: <%= @username %></p>
+      <input type="submit" value="Logout">
+    </form>
+  <% end %>
 
-<form action="/fetch" method="post">
-  <input name="handle" placeholder="Twitter Handle" />
-  <input type="submit" value="Mostrar Tweets" />
+<form action="/profile" method="POST">
+  <input type="text" name="username" placeholder="username">
+  <input type="submit" value="Registrar">
 </form>
+<br>
+<br>
 
+
+
+  

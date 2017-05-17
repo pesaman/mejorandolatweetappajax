@@ -1,7 +1,26 @@
 $(document).ready(function() {
-	// Este código corre después de que `document` fue cargado(loaded) 
-	// completamente. 
-	// Esto garantiza que si amarramos(bind) una función a un elemento 
-	// de HTML este exista ya en la página. 
+
+  $('#search').submit(function(e){
+    e.preventDefault();
+    form = $('#search').serialize();
+    console.log("hola");
+    $.ajax({
+      url:'/fetch',
+      data: form,
+      type:'POST',
+      beforeSend: function() {
+        $(".tweets").html("<img src='fg.gif'/>");
+      },
+      success:function(data){ 
+        $(".tweets").html(data);
+        console.log(data)
+      }
+    });
+
+  });
+
 
 });
+
+
+

@@ -1,0 +1,20 @@
+  <h1>Bienvenido al app de twitter!</h1>
+<div class="session">
+<% if @username %>
+    <form id="logout" action="/logout" method="POST">
+      <p>Welcome: <%= @username %></p>
+      <input type="submit" value="Logout">
+    </form>
+  <% end %>
+</div>
+<br>
+<div class="header">
+  <form id="search" action="/fetch" method="POST">
+    <p>Search tweets</p>
+    <input type="text" name="twitter_handle" placeholder="handleS">
+    <input type="submit" placeholder="Search"> 
+  </form>
+</div>
+<div class="tweets">
+  
+</div>

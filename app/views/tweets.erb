@@ -1,0 +1,9 @@
+  <h1>Bienvenido al app de twitter!</h1>
+<div class="tweet_list">
+  <% if @tweets %>
+    <h3> List of tweets of: <%= @handle  %></h3>
+    <% @tweets.each do |t| %>
+      <p><%= t.text %></p>
+    <% end %>
+  <% end %>
+<div>
